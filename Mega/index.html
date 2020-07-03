@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html><html><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>ToonsHub Links</title>
+<link rel="icon" type="image/png" href="https://www.toonshub.ml/favicon.ico"/>
+<meta name="robots" content="noindex"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/lumen/bootstrap.min.css"/>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
+
+<style>
+body {
+    font-family: 'Varela Round';font-size: 10px;
+}
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+</style>
+</head>
+<body><script>
+    var iframe = getUrlVars()["id"];
+    //******************************
+    // FUNÇÃO PARA BUSCAR VAR URL  *
+    //******************************
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+    //********************
+    // VAR DOCUMENT = D  *
+    //********************
+    var d = document;
+</script><center><br/><a href="/"><img src="https://4.bp.blogspot.com/-2ISV6u-wkDA/Xr409KDbvwI/AAAAAAAABDA/9gK_BH4ko_MMsiGnVkEB2OirOhaScCPSwCK4BGAYYCw/s1600/Header%2BToons.png" alt="ToonsHub" width="315" height="auto"/></a></center>
+<script type="text/javascript">
+d.write('<hr/><center><a href="/Mega/Player/?id='+iframe+'"><button class="btn"><i class="fa fa-play"></i> Play Online</button></a></center><hr/><center><a href="https://mega.nz/file/'+iframe+'"><button class="btn"><i class="fa fa-download"></i> Download</button></a></center><hr/>')
+</script>
+</body></html>
