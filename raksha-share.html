@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<script>
+    var name = getUrlVars()["n"];
+    //******************************
+    // FUNÇÃO PARA BUSCAR VAR URL  *
+    //******************************
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+    //********************
+    // VAR DOCUMENT = D  *
+    //********************
+    var d = document;
+</script>
+<script type="text/javascript">
+d.write('<input type="text" value="Happy Raksha Bandhan to the most precious part of my life. Please click the link: https://toonshub.github.io/raksha.html?n='+name+'" id="myInput" style="width:70%">&nbsp;<button onclick="myFunction()" style="width:25%;background-color:red">Copy Link</button><input type="text" value="Happy Raksha Bandhan to the most precious part of my life. Please click the link: https://toonshub.github.io/raksha.html?n='+name+'" id="myInput" style="width:70%">&nbsp;<a href="https://api.whatsapp.com/send?text=Happy%20Raksha%20Bandhan%20to%20the%20most%20precious%20part%20of%20my%20life.%20Please%20click%20the%20link:%20https://toonshub.github.io/raksha.html?n='+name+'" target="_blank"><button style="width:25%"><i class="fa fa-whatsapp"></i> Whatsapp</button></a><input type="text" value="Happy Raksha Bandhan to the most precious part of my life. Please click the link: https://toonshub.github.io/raksha.html?n='+name+'" id="myInput" style="width:70%">&nbsp;<a href="https://www.facebook.com/sharer/sharer.php?u=Happy%20Raksha%20Bandhan%20to%20the%20most%20precious%20part%20of%20my%20life.%20Please%20click%20the%20link:%20https://toonshub.github.io/raksha.html?n='+name+'" target="_blank"><button style="width:25%;background-color:blue"><i class="fa fa-whatsapp"></i> Facebook</button></a>')</script>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+}
+</script>
+
+</body>
+</html>
