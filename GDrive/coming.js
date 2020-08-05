@@ -1,5 +1,6 @@
 function externalLinks() {   for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {     var b = c[a];     b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")   } } ; externalLinks();
-    /*function check(e)
+jQuery(document.links)   .filter(function() {     return this.hostname != window.location.hostname;   })     .attr('target', '_blank');    
+/*function check(e)
     {
     alert(e.keyCode);
     }*/
