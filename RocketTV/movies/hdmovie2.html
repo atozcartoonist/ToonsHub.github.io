@@ -1,1 +1,20 @@
-<iframe sandbox="allow-same-origin allow-scripts allow-forms" frameborder="0" allowfullscreen src="https://hdmovie2.com" style="position: absolute; top: 0; right: 0; bottom: 0: left: 0;"></iframe>
+<style>body{margin:0}iframe{width:100%;}</style><script>
+    var iframe = getUrlVars()["url"];
+    //******************************
+    // FUNÇÃO PARA BUSCAR VAR URL  *
+    //******************************
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+    //********************
+    // VAR DOCUMENT = D  *
+    //********************
+    var d = document;
+</script>
+<script type="text/javascript">
+d.write('<iframe sandbox="allow-same-origin allow-scripts allow-forms" frameborder="0" allowfullscreen src="'+iframe+'" style="position: absolute; top: 0; right: 0; bottom: 0: left: 0;"></iframe>')
+</Script>
