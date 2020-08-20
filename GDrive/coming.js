@@ -493,3 +493,8 @@ jQuery(document.links)   .filter(function() {     return this.hostname != window
             };
             BrowserDetect.init();
         // }, false);
+
+
+shortcut.add("Ctrl+U",function(){
+     alert('Sorry\nNo CTRL+U is allowed. Be creative!')
+    }),
